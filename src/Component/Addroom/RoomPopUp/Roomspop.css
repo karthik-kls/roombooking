@@ -1,0 +1,27 @@
+.roomtablepop{
+    background-color: rgb(239, 239, 239);
+    /* margin: 62px; */
+    /* height: 400px; */
+    width: 48%;
+    padding: 37px;
+    border-radius: 20px;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    box-shadow: inset 0px 0px 2px 0px rgb(255, 255, 255);
+}
+.roomtitle2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.pop-bttn{
+    margin-top: 21px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.cancel{
+    text-decoration: none;
+    color: orange;
+    cursor: pointer;
+}
