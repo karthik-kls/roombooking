@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Button from '../../Button/Button'
 import '../RoomPopUp/Roomspop.css'
 import InputComponent from './InputText/InputComponent'
-
+import SelectLabel from './SelectLabel'
 
 
 const RoomPopUp = ({setAddroom}) => {
@@ -10,6 +10,7 @@ const RoomPopUp = ({setAddroom}) => {
   const [adult , setAdult]=useState('')
   const [child , setChild]=useState('')
   const [price, setPrice]=useState('')
+  const [select, setSelect] = useState([])
   const sentData=(e)=>{
     e.preventDefault()
     console.log(Room,adult,child,price);
@@ -18,7 +19,7 @@ const RoomPopUp = ({setAddroom}) => {
   
   return (
     <div className='roomtablepop'>
-    <div className='roomtitle2'>Room {Room}</div>
+    <div className='roomtitle2'>Add New Room {Room}</div>
 
     <form method='post' onSubmit={sentData} >
     <InputComponent type='Number' text='Room Number'  setState={setRoom}/>
@@ -30,7 +31,29 @@ const RoomPopUp = ({setAddroom}) => {
     <div>or</div>
     <div className='cancel' onClick={()=>{setAddroom(false)}}>Cancel</div>
     </div>
-    <div className="roomtitle2">Amenities</div>
+    <div className="Amenities">
+
+    <h2>Amenities </h2>
+    <select onChange={(e)=>{setSelect([...select,e.target.value])}}>
+      <option disabled value="select">Select</option>
+      <option value="tv">Television</option>
+      <option value="bed">Bed</option>
+      <option value="wifi">Wifi</option>
+      <option value="extra">Extre</option>
+    </select>
+
+   </div><div className='selectdata'>
+    {select.map((data,index)=>{
+    return(
+    <SelectLabel select={select} data={data} key={index} index={index} setSelect={setSelect}/>
+    )})}
+    
+    
+    
+    
+    
+    
+    </div>
     
     </form>
     
