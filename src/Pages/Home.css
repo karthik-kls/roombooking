@@ -1,8 +1,11 @@
 .roomimg{
-    background-image: url(./hotel.png);
+    background-image: url("./hotel.png");
     height: 400px;
-    width: 111%;
-    margin-top: 44px;
+    width: 100%;
+    /* margin-top: 44px; */
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .details{
     display: flex;
@@ -83,8 +86,16 @@ body{
         align-items: center;
 
     }
+    /* .roomimg{
+        height: 220px;
+       
+       
+    
+      } */
   }
-
-
-
+/* @media only screen and (max-width:600px) {
+   
+    
+}  */
+    
 
