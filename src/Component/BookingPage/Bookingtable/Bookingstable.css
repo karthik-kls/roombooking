@@ -1,4 +1,13 @@
-.Bookigstable,.datasbookings{
+.Bookigstable{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    border: 1px solid lightgreen;
+    padding: 10px;
+
+
+}
+.datasbookings{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     place-items: center;
@@ -6,8 +15,9 @@
     padding: 10px;
 }
 .bookingtext{
-    color: darkblue;
+    /* color: darkblue; */
     font-weight: 600;
+    /* font-size: 10px; */
 }
 .bookslist{
     height: 306px;
@@ -18,12 +28,22 @@
     margin-top: 72px;
 }
 .fstname{
-    font-weight: 700;
+    font-weight: 599;
 }
 .green{
-    color: green;
+    /* color: green; */
 }
-@media only screen and (max-width: 689px) {
+
+
+@media only screen and (max-width: 900px) {
+.bookingtext,.datasbookings{
+text-size-adjust: auto;
+font-size: 12px;
+}
+
+
+}
+@media only screen and (max-width: 714px) {
 
     .Bookigstable{
     display: none;
@@ -32,6 +52,5 @@
     display: grid;
     grid-template-columns: none;
 }
-
 
 }

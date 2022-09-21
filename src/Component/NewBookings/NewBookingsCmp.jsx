@@ -23,7 +23,7 @@ const NewBookingsCmp = () => {
             <InputComponent type='Text' text='Guest Last Name' setState={setGuest}/>
             <InputComponent type='Text' text='Guest First Name' setState={setFirst}/>
             <InputComponent type='Date' text='Check in Date' setState={setChkin}/>
-            <InputComponent type='Date' text='Check in Date' setState={setChkout}/>
+            <InputComponent type='Date' text='Check out Date' setState={setChkout}/>
             <InputComponent type='Number' text='Number of Adult' setState={setAdult}/>
             <InputComponent type='Number' text='Number of Children' setState={setChild}/>
             <div className='getbttn'>

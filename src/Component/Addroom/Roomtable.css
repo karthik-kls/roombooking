@@ -16,11 +16,11 @@
     background-color: orange;
 }
 .orange{
-    color: orange;
+    /* color: orange; */
 }
-.red{
+/* .red{
     color: red;
-}
+} */
 .roomtabletitle{
 background-color: white;
 margin-top: 20px;
@@ -34,7 +34,7 @@ margin-top: 20px;
     left:0%;
 }
 .roomtext{
-    color: blue;
+    /* color: blue; */
     font-weight: 600;
 }
 input[type=number]::-webkit-inner-spin-button {

@@ -16,7 +16,7 @@ const Navbar = () => {
         <img src={bag} alt="" className='bagg' srcset="" height='80' width='71' />
         <p className='title'>Booking System</p>
           <div >
-          <NavLink to="/" className={({isActive})=>(isActive?'selected':'link')} >HomePage</NavLink> </div>
+          <NavLink to="/home" className={({isActive})=>(isActive?'selected':'link')} >HomePage</NavLink> </div>
    
           <div  >
           <NavLink to="/room"className={({isActive})=>(isActive?'selected':'link')} >Room</NavLink>
