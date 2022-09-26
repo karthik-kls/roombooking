@@ -77,6 +77,39 @@ body{
 }
 
 
+.inorout{
+    font-weight: 600;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.bttn2{
+    border: none;
+    color: orange;
+    border: 2px solid orange;
+    /* width: 80px; */
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    /* height: 35px; */
+    padding: 12px;
+    margin: 10px;
+}
+.bttns{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bookingbttns{
+    margin-top: 10px;
+}
+.back{
+cursor: pointer;
+}
+
+
+
+
+
 
 
 

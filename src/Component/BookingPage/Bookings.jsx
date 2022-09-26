@@ -3,6 +3,7 @@ import '../BookingPage/Booking.css'
 import './Bookingtable/Bookingstable'
 import Bookingstable from './Bookingtable/Bookingstable'
 import { NavLink } from 'react-router-dom'
+import Button from '../Button/Button'
 
 const Bookings = ({bookingdata}) => {
   return (
@@ -10,10 +11,14 @@ const Bookings = ({bookingdata}) => {
         <div className='bookingtitlediv'>
         <div className='bookingtitle'>Bookings</div>
         {/* <div className='newbknbtn'>New Booking</div> */}
-        <NavLink to="/NewBooking" className='newbknbtn'  >New Booking</NavLink>
+        <NavLink to="/NewBooking" className='newbknbtn' >New Booking</NavLink>
 
         </div>
-        <div>
+        
+        <div className='searchbook'>
+          <input className='boxdesign' type="text" placeholder='Type Guest Name' />
+          <input className='boxdesign' type="text" placeholder='Any Status' />
+          <Button text={'Search'}/>
           
         </div>
         <div>

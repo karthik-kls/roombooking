@@ -1,14 +1,44 @@
-
-
-.room3,.valuetableroom{
+.room3{
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
     place-items: center;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
     padding: 11px;
 }
+
+.tablevalue{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    place-items: center;
+    /* border: 1px solid lightgray; */
+    padding: 11px;
+}
+.valuetableroom{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    border: 1px solid lightgray;
+}
+.roomtext{
+    display: flex;
+    justify-content: center;
+}
+.threebtndiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainroomtable{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    border: 1px solid lightgray;
+
+}
+
+
 .list{
-    height: 314px;
+    /* height: 314px; */
     overflow: scroll;
 }
 .roombtn{
@@ -17,26 +47,37 @@
 }
 .orange{
     /* color: orange; */
+    font-weight: 600;
 }
-/* .red{
-    color: red;
-} */
+.red{
+    /* color: red; */
+    font-weight: 600;
+}
 .roomtabletitle{
 background-color: white;
 margin-top: 20px;
 }
+.threebtn{
+    cursor: pointer;
+}
 .Popuproom{
     backdrop-filter: blur(5px);
     width: 100%;
-    height: 100vh;
+    height: 125vh;
     position: absolute;
-    top: 2px;
+    top: 0px;
     left:0%;
+    
+    
 }
 .roomtext{
-    /* color: blue; */
+    color: blue;
     font-weight: 600;
 }
+.tablevalue{
+    
+}
+
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
@@ -48,5 +89,45 @@ input[type=number]::-webkit-inner-spin-button {
     grid-template-columns: none;
 
 
+}
+.tablevalue{
+    display: grid;
+    grid-template-columns: none;
+}
+.valuetableroom{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+.roomtablepop{
+    width: 83%;
+    position: absolute;
+    left: 8%;
+    top: 6%;
+
+overflow: scroll;
+}
+.roombox{
+    margin: 0;
+    border-radius: 0;
+}
+body{
+    background-color: rgb(239, 239, 239);
+}
+.Popuproom{
+    background-color: rgb(239, 239, 239);
+}
+}
+  
+  @media only screen and (max-width: 796px) {
+
+    .roomtext{
+        font-size: 13px;
+    }
+      }
+  
+  @media only screen and (max-width: 720px) {
+
+.datasbookings{
+    font-size: 15px;
 }
   }

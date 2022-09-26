@@ -1,5 +1,19 @@
 .rountlabel{
-    height: 30px;
+
+    display: flex;
+    gap: 20px;
+    /* background: white; */
+    margin: 20px;
+    justify-content: space-between;
+    border: 2px solid orange;
+    border-radius: 20px;
+    width: 100px;
+    /* margin: 32px; */
+    padding: 5px;
+
+
+
+    /* height: 30px;
     width: 70px;
     border: 1px solid orange;
     color: black;
@@ -7,5 +21,12 @@
     align-items: center;
     justify-content: space-evenly;
     border-radius: 15px;
-    gap: 20px;
+    gap: 20px; */
+}
+.selectdata{
+    display: flex;
+    flex-wrap: wrap;
+}
+.addselect{
+    border-color: lightgrey;
 }
